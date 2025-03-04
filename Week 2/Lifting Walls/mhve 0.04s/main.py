@@ -38,7 +38,6 @@ class SolverPrunedCranesWithReaches:
         self.result = len(self.shortest_solution) if len(self.shortest_solution) <= self.n else 'Impossible'
 
     def solve(self , solution , index):
-        self.calls += 1
         if self.isValid(solution):
             if len(solution) < len(self.shortest_solution):
                 self.shortest_solution = solution.copy()
